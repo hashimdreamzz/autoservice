@@ -1,0 +1,414 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-12-15 15:08:53.383142",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "columnbreak_company",
+  "job_order_no",
+  "work_order",
+  "posting_date",
+  "customer_details_section",
+  "customer_name",
+  "mobile_no",
+  "landline_no",
+  "email_id",
+  "coulumnbreak_customerdetails",
+  "territory",
+  "customer_group",
+  "customer_type",
+  "address",
+  "vehicle_details_section",
+  "registration_no",
+  "vin_number",
+  "engine_no_chassis_no__drive_unit",
+  "color",
+  "color_name",
+  "columnbreak_vehicle",
+  "brand",
+  "year",
+  "model",
+  "meter_reading",
+  "fuel_level",
+  "remarks_section",
+  "remarks",
+  "operations_section",
+  "operations",
+  "requisition_charges",
+  "labor_charges",
+  "total_labor_charge",
+  "parts_section",
+  "parts_amount",
+  "total_parts_charges",
+  "miscellaneos_section",
+  "others",
+  "others_total",
+  "total",
+  "grand_total",
+  "section_break_jwbr",
+  "customer_charges",
+  "insurance_charges",
+  "advance_section",
+  "customer",
+  "column_break_kvbx",
+  "insurance",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SERV-WO-.DD.-.MM.-.YY.-.#####",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "columnbreak_company",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Data",
+   "label": "Work Order",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "landline_no",
+   "fieldtype": "Data",
+   "label": "Landline No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "coulumnbreak_customerdetails",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vehicle_details_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Details"
+  },
+  {
+   "fieldname": "registration_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Registration No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vin_number",
+   "fieldtype": "Data",
+   "label": "VIN Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "engine_no_chassis_no__drive_unit",
+   "fieldtype": "Data",
+   "label": "Engine No/ Chassis No / Drive Unit",
+   "read_only": 1
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color",
+   "read_only": 1
+  },
+  {
+   "fieldname": "columnbreak_vehicle",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "label": "Brand",
+   "read_only": 1
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model",
+   "read_only": 1
+  },
+  {
+   "fieldname": "meter_reading",
+   "fieldtype": "Data",
+   "label": "Meter Reading",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fuel_level",
+   "fieldtype": "Data",
+   "label": "Fuel Level",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "read_only": 1
+  },
+  {
+   "fieldname": "operations_section",
+   "fieldtype": "Section Break",
+   "label": "Operations"
+  },
+  {
+   "fieldname": "operations",
+   "fieldtype": "Table",
+   "label": "Operations",
+   "options": "Operations"
+  },
+  {
+   "fieldname": "requisition_charges",
+   "fieldtype": "Section Break",
+   "label": "Requisition Charges"
+  },
+  {
+   "fieldname": "parts_amount",
+   "fieldtype": "Table",
+   "label": "Parts Amount",
+   "options": "Parts Amount"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Section Break",
+   "label": " Total"
+  },
+  {
+   "fieldname": "section_break_jwbr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer_charges",
+   "fieldtype": "Table",
+   "label": "Customer Charges",
+   "options": "Customer Charges"
+  },
+  {
+   "fieldname": "insurance_charges",
+   "fieldtype": "Table",
+   "label": "Insurance Charges",
+   "options": "Insurance Charges"
+  },
+  {
+   "fieldname": "advance_section",
+   "fieldtype": "Section Break",
+   "label": "Advance"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Data",
+   "label": "Customer"
+  },
+  {
+   "fieldname": "column_break_kvbx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "insurance",
+   "fieldtype": "Data",
+   "label": "Insurance"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Job Sheet",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_order_no",
+   "fieldtype": "Data",
+   "label": "Job Order No"
+  },
+  {
+   "fetch_from": "customer_name.primary_address",
+   "fieldname": "address",
+   "fieldtype": "Read Only",
+   "label": "Address"
+  },
+  {
+   "fieldname": "color_name",
+   "fieldtype": "Data",
+   "label": "Color Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Data",
+   "label": "Territory",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Data",
+   "label": "Customer Group",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_type",
+   "fieldtype": "Data",
+   "label": "Customer Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "labor_charges",
+   "fieldtype": "Table",
+   "label": "Labor Charges",
+   "options": "Labor Charge"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_labor_charge",
+   "fieldtype": "Currency",
+   "label": "Total Labor Charge",
+   "read_only": 1
+  },
+  {
+   "fieldname": "parts_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_parts_charges",
+   "fieldtype": "Currency",
+   "label": "Total Parts Charges",
+   "read_only": 1
+  },
+  {
+   "fieldname": "miscellaneos_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "others",
+   "fieldtype": "Table",
+   "label": "Others",
+   "options": "Others"
+  },
+  {
+   "fieldname": "others_total",
+   "fieldtype": "Currency",
+   "label": "Others Total",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-12-27 18:46:45.771169",
+ "modified_by": "Administrator",
+ "module": "Autoservice",
+ "name": "Work_Order2",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Autoservice Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Autoservice User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Autoservice Supervisor",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

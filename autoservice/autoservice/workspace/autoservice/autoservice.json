@@ -1,0 +1,147 @@
+{
+ "charts": [
+  {
+   "chart_name": "Vehicle IN",
+   "label": "Vehicle Recieved"
+  }
+ ],
+ "content": "[{\"id\":\"CBialq2ORO\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Autoservice</span>\",\"col\":12}},{\"id\":\"9ZYXaKLLP9\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Autoservice DASHBOARD\",\"col\":3}},{\"id\":\"ScSK8QVErA\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Vehicle Recieved\",\"col\":12}},{\"id\":\"a7van-9q2F\",\"type\":\"card\",\"data\":{\"card_name\":\"Job Sheet\",\"col\":4}},{\"id\":\"CL4Rzw3cTU\",\"type\":\"card\",\"data\":{\"card_name\":\"Sales Order\",\"col\":4}},{\"id\":\"wwVQozGar_\",\"type\":\"card\",\"data\":{\"card_name\":\"Vehicle Master\",\"col\":4}},{\"id\":\"thlX9n-uPX\",\"type\":\"card\",\"data\":{\"card_name\":\"Work_Order\",\"col\":4}},{\"id\":\"cOCoRtrSTc\",\"type\":\"card\",\"data\":{\"card_name\":\"Invoice\",\"col\":4}},{\"id\":\"b9jSou17xY\",\"type\":\"card\",\"data\":{\"card_name\":\"Customer Master\",\"col\":4}}]",
+ "creation": "2022-12-15 14:44:57.771950",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-energy-points",
+ "idx": 0,
+ "label": "Autoservice",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Master",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Vehicle Master",
+   "link_count": 0,
+   "link_to": "Vehicle Master",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer Master",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Customer",
+   "link_count": 0,
+   "link_to": "Customer",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Job Sheet",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Job Sheet",
+   "link_count": 0,
+   "link_to": "Job Sheet",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Order",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Sales Order",
+   "link_count": 0,
+   "link_to": "Sales Order",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Work_Order",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Work_Order",
+   "link_count": 0,
+   "link_to": "Work_Order",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Invoice",
+   "link_count": 1,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Invoice",
+   "link_count": 0,
+   "link_to": "Sales Invoice",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-03-14 19:10:00.883157",
+ "modified_by": "Administrator",
+ "module": "Autoservice",
+ "name": "Autoservice",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Autoservice DASHBOARD",
+   "link_to": "Autoservice",
+   "type": "Dashboard"
+  }
+ ],
+ "title": "Autoservice"
+}

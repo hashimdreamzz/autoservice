@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-12-15 17:29:14.237492",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "amount",
+  "discount",
+  "net_amount",
+  "tax",
+  "gross"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "columns": 1,
+   "fieldname": "discount",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Discount"
+  },
+  {
+   "columns": 2,
+   "fieldname": "net_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Net Amount"
+  },
+  {
+   "columns": 1,
+   "fieldname": "tax",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Tax"
+  },
+  {
+   "columns": 1,
+   "fieldname": "gross",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Gross"
+  },
+  {
+   "columns": 2,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-19 13:11:21.443621",
+ "modified_by": "Administrator",
+ "module": "Autoservice",
+ "name": "Miscelleneous",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

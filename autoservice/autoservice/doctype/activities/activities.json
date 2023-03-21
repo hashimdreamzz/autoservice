@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "autoname": "field:activity_name",
+ "creation": "2022-12-15 15:30:45.553846",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_name",
+  "activity_fixed_time",
+  "activity_cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "activity_name",
+   "fieldtype": "Data",
+   "label": "Activity Name ",
+   "unique": 1
+  },
+  {
+   "fieldname": "activity_fixed_time",
+   "fieldtype": "Float",
+   "label": "Activity Fixed Time"
+  },
+  {
+   "fieldname": "activity_cost",
+   "fieldtype": "Currency",
+   "label": "Hourly Cost"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-12-18 15:36:56.050808",
+ "modified_by": "Administrator",
+ "module": "Autoservice",
+ "name": "Activities",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Autoservice Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Autoservice User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

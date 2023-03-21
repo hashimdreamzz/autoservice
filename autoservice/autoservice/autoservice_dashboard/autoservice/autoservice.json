@@ -1,0 +1,53 @@
+{
+ "cards": [
+  {
+   "card": "Active Customers"
+  },
+  {
+   "card": "Active Suppliers"
+  },
+  {
+   "card": "Annual Purchase"
+  },
+  {
+   "card": "Annual Sales"
+  },
+  {
+   "card": "Sales Orders to Bill"
+  },
+  {
+   "card": "Sales Orders to Deliver"
+  },
+  {
+   "card": "Total Stock Value"
+  },
+  {
+   "card": "Purchase Orders to Bill"
+  },
+  {
+   "card": "Purchase Orders to Receive"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Vehicle  Out",
+   "width": "Full"
+  },
+  {
+   "chart": "Vehicle IN",
+   "width": "Full"
+  }
+ ],
+ "creation": "2022-12-15 15:39:50.637845",
+ "dashboard_name": "Autoservice",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2023-03-03 13:13:24.536424",
+ "modified_by": "Administrator",
+ "module": "Autoservice",
+ "name": "Autoservice",
+ "owner": "Administrator"
+}

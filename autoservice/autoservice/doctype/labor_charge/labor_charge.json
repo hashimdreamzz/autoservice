@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-12-15 17:27:24.126724",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "activity",
+  "activity_name",
+  "employee_id",
+  "employee_name",
+  "fixed_time",
+  "activity_time",
+  "hourly_rate",
+  "amount",
+  "discount",
+  "discount_amount",
+  "net_amount",
+  "tax",
+  "gross",
+  "description",
+  "uom"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "columns": 1,
+   "fieldname": "discount",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Discount Percent"
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Currency",
+   "label": "Net Amount",
+   "print_hide": 1
+  },
+  {
+   "columns": 1,
+   "default": "1",
+   "fieldname": "activity_time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Activity Time"
+  },
+  {
+   "default": "1 Hour",
+   "fetch_from": "activity.description",
+   "fieldname": "fixed_time",
+   "fieldtype": "Read Only",
+   "label": "Fixed Time",
+   "print_hide": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "activity.standard_rate",
+   "fetch_if_empty": 1,
+   "fieldname": "hourly_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Hourly Rate"
+  },
+  {
+   "columns": 1,
+   "fieldname": "employee_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee ID",
+   "options": "Employee",
+   "print_hide": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SERV-LB-.#####",
+   "print_hide": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "activity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Activity",
+   "options": "Item"
+  },
+  {
+   "columns": 1,
+   "fieldname": "gross",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Gross"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "activity.item_name",
+   "fieldname": "activity_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Activity Name"
+  },
+  {
+   "default": "5",
+   "fieldname": "tax",
+   "fieldtype": "Percent",
+   "label": "Tax",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "activity.description",
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "description",
+   "print_hide": 1
+  },
+  {
+   "fetch_from": "activity.stock_uom",
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "label": "uom",
+   "print_hide": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "discount_amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Discount Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-31 15:18:54.227989",
+ "modified_by": "Administrator",
+ "module": "Autoservice",
+ "name": "Labor Charge",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

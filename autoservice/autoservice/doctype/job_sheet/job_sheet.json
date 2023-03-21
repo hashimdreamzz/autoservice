@@ -1,0 +1,601 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2022-12-15 14:27:44.972515",
+ "default_view": "Report",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "company",
+  "columnbreak_company",
+  "work_order",
+  "posting_date",
+  "customer_details_section",
+  "customer_name",
+  "mobile_no",
+  "landline_no",
+  "email_id",
+  "coulumnbreak_customerdetails",
+  "territory",
+  "customer_group",
+  "customer_type",
+  "address",
+  "vehicle_details_section",
+  "vehicle_register_no",
+  "registration_no",
+  "vin_search",
+  "vin_number",
+  "engine_no_chassis_no__drive_unit",
+  "color",
+  "color_name",
+  "warranty_start_date",
+  "service_contract_start_date",
+  "columnbreak_vehicle",
+  "brand",
+  "year",
+  "model",
+  "meter_reading",
+  "fuel_level",
+  "warranty_end_date",
+  "service_contract_end_date",
+  "inspection_snaps_section",
+  "image",
+  "section_break_jqod",
+  "html_image",
+  "annotated_car_image_cf",
+  "car_structure_annotation",
+  "remarks_section",
+  "remarks",
+  "operations_section",
+  "operations",
+  "customer_remarks_section",
+  "customer_remarks",
+  "job_order_terms_and_conditions",
+  "1",
+  "2",
+  "21",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "11",
+  "12",
+  "13",
+  "section_break_2w5q",
+  "name1",
+  "signature",
+  "date",
+  "date_",
+  "section_break_scch",
+  "images",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SERV-JO-.#####",
+   "reqd": 1
+  },
+  {
+   "default": "AMCCEV AUTO SERVICES",
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "columnbreak_company",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "work_order",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Work Order",
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Posting Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fetch_from": "vehicle_register_no.customer_name",
+   "fetch_if_empty": 1,
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer_name.mobile",
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile No",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer_name.landline",
+   "fieldname": "landline_no",
+   "fieldtype": "Data",
+   "label": "Landline No",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer_name.email",
+   "fieldname": "email_id",
+   "fieldtype": "Data",
+   "label": "Email ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "coulumnbreak_customerdetails",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vehicle_details_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Details"
+  },
+  {
+   "fetch_from": "vehicle_register_no.registration_no",
+   "fieldname": "registration_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Registration No",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_register_no.vin_number",
+   "fieldname": "vin_number",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "VIN Number",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_register_no.engine_no__chassis_no__drive_unit",
+   "fieldname": "engine_no_chassis_no__drive_unit",
+   "fieldtype": "Data",
+   "label": "Engine No/ Chassis No / Drive Unit",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_register_no.vehicle_color",
+   "fieldname": "color",
+   "fieldtype": "Data",
+   "label": "Color",
+   "read_only": 1
+  },
+  {
+   "fieldname": "columnbreak_vehicle",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "vehicle_register_no.brand",
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Brand",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_register_no.model",
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Model",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_register_no.meter_reading",
+   "fieldname": "meter_reading",
+   "fieldtype": "Data",
+   "label": "Meter Reading",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_register_no.fuel_level",
+   "fieldname": "fuel_level",
+   "fieldtype": "Data",
+   "label": "Fuel Level",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "operations_section",
+   "fieldtype": "Section Break",
+   "label": "Operations"
+  },
+  {
+   "fieldname": "operations",
+   "fieldtype": "Table",
+   "label": "Operations",
+   "options": "Operations"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Job Sheet",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_jqod",
+   "fieldtype": "Section Break",
+   "label": "Inspection Marking"
+  },
+  {
+   "fieldname": "html_image",
+   "fieldtype": "HTML",
+   "options": "<div style=\"position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; padding-top: 50px;\">\n<img id=\"sourceImage\" src=\"/files/small.png\" style=\"max-width: 900px; max-height: 80%;\"> \t\n        <img id=\"sampleImage\" src=\"/files/small.png\" style=\"max-width: 900px; max-height: 100%; position: absolute;\"> </div>"
+  },
+  {
+   "fetch_from": "customer_name.primary_address",
+   "fieldname": "address",
+   "fieldtype": "Read Only",
+   "label": "Address"
+  },
+  {
+   "fetch_from": "customer_name.territory",
+   "fieldname": "territory",
+   "fieldtype": "Data",
+   "label": "Territory",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer_name.customer_group",
+   "fieldname": "customer_group",
+   "fieldtype": "Data",
+   "label": "Customer Group",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer_name.customer_type",
+   "fieldname": "customer_type",
+   "fieldtype": "Data",
+   "label": "Customer Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_register_no.vehicle_color_tag",
+   "fetch_if_empty": 1,
+   "fieldname": "color_name",
+   "fieldtype": "Select",
+   "label": "Color Name",
+   "options": "\nWhite\nYellow\nBlue\nRed\nGreen\nBlack\nBrown\nAzure\nIvory\nTeal\nSilver\nPurple\nNavy blue\nPea green\nGray\nOrange\nMaroon\nCharcoal\nAquamarine\nCoral\nFuchsia\nWheat\nLime\nCrimson\nKhaki\nHot pink\nMagenta\nOlden\nPlum\nOlive\nCyan"
+  },
+  {
+   "fetch_from": "vehicle_register_no.year",
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vehicle_register_no",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Vehicle Register No",
+   "options": "Vehicle Master"
+  },
+  {
+   "fieldname": "inspection_snaps_section",
+   "fieldtype": "Section Break",
+   "label": "INSPECTION SNAPS"
+  },
+  {
+   "fieldname": "customer_remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Remarks"
+  },
+  {
+   "fieldname": "customer_remarks",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "job_order_terms_and_conditions",
+   "fieldtype": "Section Break",
+   "label": "Job Order Terms And Conditions"
+  },
+  {
+   "fetch_from": "customer_name.customer_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "section_break_2w5q",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date_",
+   "fieldtype": "Date",
+   "label": "Date_"
+  },
+  {
+   "default": "1.\tAMCC Auto service will not be responsible for any private things that get missed so the customer is responsible for all his/ her belongings.",
+   "fieldname": "1",
+   "fieldtype": "Text",
+   "read_only": 1
+  },
+  {
+   "default": "2.\tAMCC Auto services have the right to drive the car inside and outside the facility for test drive and quality purposes.",
+   "fieldname": "2",
+   "fieldtype": "Text",
+   "read_only": 1
+  },
+  {
+   "default": "3.\tIncase of any accident happens AMCC auto services must acknowledge the customer and use the car insurance to repair the accident till car returns to its previous condition.",
+   "fieldname": "21",
+   "fieldtype": "Text",
+   "read_only": 1
+  },
+  {
+   "default": "4.\tAfter the car gets ready our team will send a notification for delivery and after a maximum of 7 days from this notification parking charges will be applicable 50DHS/Day.",
+   "fieldname": "4",
+   "fieldtype": "Text",
+   "read_only": 1
+  },
+  {
+   "default": "5.\tIn case of the customer supplied the parts AMCC Auto Services L.L.C will not give any warranty or responsibility towards those parts or it\u2019s installation.",
+   "fieldname": "5",
+   "fieldtype": "Text",
+   "read_only": 1
+  },
+  {
+   "default": "6.\tAll Customers comes under AMCC EV warranty policies will be subjected to AMCC EV warranty terms and conditions only and all other additional requirements will be charged to customer.",
+   "fieldname": "6",
+   "fieldtype": "Text",
+   "read_only": 1
+  },
+  {
+   "default": "7.\tAll Repairs or OEM parts replacements by AMCC Auto Services L.L.C will have a 1-6 Months Warranty against manufacturers defects upon the part fixed on the car.",
+   "fieldname": "7",
+   "fieldtype": "Text",
+   "read_only": 1
+  },
+  {
+   "default": "8.\tAll Painting Jobs have a 1-year warranty against paint defects only.",
+   "fieldname": "8",
+   "fieldtype": "Text",
+   "read_only": 1
+  },
+  {
+   "default": "9.\tAll documents should be signed by the customer and incase the vehicle leaves the garage without payment it will be considered a vehicle thrift and the company has the right to take the proper legal action towards this activity.",
+   "fieldname": "9",
+   "fieldtype": "Text",
+   "read_only": 1
+  },
+  {
+   "default": "10.\tThe job terms and conditions shall be governed and construed in accordance with the laws of the United Arab Emirates, and any dispute arising between both parties with respects of the rights and obligations created by the transactions envisaged hereunder shall be subject to the exclusive jurisdiction of the criminal/ civil courts in the Emirate of Dubai, the company shall have the right to initiate appropriate legal proceedings against the customer in any other jurisdiction where the customer has presence and/ or assets, in accordance with the laws applicable in the relevant jurisdictions.",
+   "fieldname": "10",
+   "fieldtype": "Text",
+   "read_only": 1
+  },
+  {
+   "default": "11.\tAll Payments should be in cash in Dirhams and cheques will not be accepted for individuals and for corporates it will be upon the credit application form terms and conditions.",
+   "fieldname": "11",
+   "fieldtype": "Text",
+   "read_only": 1
+  },
+  {
+   "default": "12.\tI/we hereby acknowledge and agree to the above information to the best of my/ our knowledge and believe it is true and fair.",
+   "fieldname": "12",
+   "fieldtype": "Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Table",
+   "options": "Attachments"
+  },
+  {
+   "fieldname": "section_break_scch",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "images",
+   "fieldtype": "Link",
+   "options": "Attachments"
+  },
+  {
+   "fetch_from": "vehicle_register_no.warranty_start_date",
+   "fieldname": "warranty_start_date",
+   "fieldtype": "Date",
+   "label": "Warranty Start Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_register_no.warranty_end_date",
+   "fieldname": "warranty_end_date",
+   "fieldtype": "Date",
+   "label": "Warranty End Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_register_no.start_date",
+   "fieldname": "service_contract_start_date",
+   "fieldtype": "Date",
+   "label": "Service Contract Start Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_register_no.end_date",
+   "fieldname": "service_contract_end_date",
+   "fieldtype": "Date",
+   "label": "Service Contract End Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "vin_search",
+   "fieldtype": "Link",
+   "label": "VIN Search",
+   "options": "Vehicle Master"
+  },
+  {
+   "default": "13.\tIn the event that you choose not to use our services or disagree with estimation charge, an estimation\u00a0fee of $300 will be charged.",
+   "fieldname": "13",
+   "fieldtype": "Text",
+   "read_only": 1
+  },
+  {
+   "fieldname": "annotated_car_image_cf",
+   "fieldtype": "Attach Image",
+   "hidden": 1
+  },
+  {
+   "fieldname": "car_structure_annotation",
+   "fieldtype": "Long Text",
+   "hidden": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-06 16:03:10.673326",
+ "modified_by": "Administrator",
+ "module": "Autoservice",
+ "name": "Job Sheet",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Autoservice Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Autoservice User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "select": 1,
+   "set_user_permissions": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Cashier",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Advisor",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

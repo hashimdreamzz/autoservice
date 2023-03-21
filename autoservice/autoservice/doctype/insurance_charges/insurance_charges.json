@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-12-15 17:31:03.752672",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "insurance_company",
+  "amount",
+  "discount",
+  "net_amount",
+  "tax",
+  "gross"
+ ],
+ "fields": [
+  {
+   "fieldname": "amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Amount"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Discount"
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Net Amount"
+  },
+  {
+   "fieldname": "tax",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tax"
+  },
+  {
+   "fieldname": "gross",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Gross"
+  },
+  {
+   "fieldname": "insurance_company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Insurance Company"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-17 09:12:37.510530",
+ "modified_by": "Administrator",
+ "module": "Autoservice",
+ "name": "Insurance Charges",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

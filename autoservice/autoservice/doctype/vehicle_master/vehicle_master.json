@@ -1,0 +1,387 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:registration_no",
+ "creation": "2022-12-15 15:29:11.661943",
+ "default_view": "Report",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "owner_details_section",
+  "customer_name",
+  "address",
+  "column_break_oz08",
+  "mobile_number",
+  "customer_group",
+  "vehicle_details_section",
+  "registration_no",
+  "vin_number",
+  "engine_no__chassis_no__drive_unit",
+  "vehicle_color",
+  "vehicle_color_tag",
+  "type",
+  "column_break_bc8u",
+  "brand",
+  "year",
+  "model",
+  "meter_reading",
+  "fuel_level",
+  "service_details_section",
+  "first_service",
+  "date_first_service",
+  "last_service",
+  "next_service",
+  "service_contract",
+  "service_contract_plan",
+  "years",
+  "kilometers",
+  "start_date",
+  "service_contract_break",
+  "includes",
+  "price",
+  "service_contract_status",
+  "end_date",
+  "warranty_details_section",
+  "warranty_plan",
+  "warranty_status",
+  "warranty_break",
+  "warranty_start_date",
+  "warranty_end_date",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "{registration_no}"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "label": "Brand"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Vehicle Master",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "registration_no",
+   "fieldtype": "Data",
+   "label": "Plate No",
+   "length": 10,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "vin_number",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "VIN Number",
+   "length": 17,
+   "reqd": 1
+  },
+  {
+   "fieldname": "engine_no__chassis_no__drive_unit",
+   "fieldtype": "Data",
+   "label": "Engine No / Chassis No / Drive Unit"
+  },
+  {
+   "fieldname": "vehicle_color",
+   "fieldtype": "Color",
+   "label": "Vehicle Color"
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model"
+  },
+  {
+   "fieldname": "meter_reading",
+   "fieldtype": "Data",
+   "label": "Meter Reading"
+  },
+  {
+   "fieldname": "fuel_level",
+   "fieldtype": "Data",
+   "label": "Fuel Level"
+  },
+  {
+   "fieldname": "vehicle_details_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Details"
+  },
+  {
+   "fieldname": "column_break_bc8u",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "service_details_section",
+   "fieldtype": "Section Break",
+   "label": "Service Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "first_service",
+   "fieldtype": "Check",
+   "label": "First Service"
+  },
+  {
+   "fieldname": "next_service",
+   "fieldtype": "Date",
+   "label": "Next Service"
+  },
+  {
+   "fieldname": "last_service",
+   "fieldtype": "Date",
+   "label": "Last Service",
+   "read_only_depends_on": "first_service"
+  },
+  {
+   "default": "Today",
+   "depends_on": "first_service",
+   "fieldname": "date_first_service",
+   "fieldtype": "Date",
+   "label": "Date First Service "
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "warranty_details_section",
+   "fieldtype": "Section Break",
+   "label": "Warranty Details"
+  },
+  {
+   "fieldname": "warranty_plan",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Warranty Plan",
+   "options": "\nGold\nSilver\nBronze"
+  },
+  {
+   "fieldname": "warranty_status",
+   "fieldtype": "Select",
+   "label": "Warranty Status",
+   "options": "\nActive\nInactive"
+  },
+  {
+   "fieldname": "warranty_start_date",
+   "fieldtype": "Date",
+   "label": "Warranty Start Date"
+  },
+  {
+   "fieldname": "warranty_end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Warranty End Date"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Data",
+   "label": "Year"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "service_contract",
+   "fieldtype": "Section Break",
+   "label": "Service Contract"
+  },
+  {
+   "fieldname": "service_contract_plan",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Service Contract Plan",
+   "options": "\nGold\nSilver\nBronze"
+  },
+  {
+   "fieldname": "years",
+   "fieldtype": "Int",
+   "label": "Years",
+   "length": 1
+  },
+  {
+   "fieldname": "kilometers",
+   "fieldtype": "Int",
+   "label": "Kilometers",
+   "length": 2
+  },
+  {
+   "fieldname": "service_contract_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "includes",
+   "fieldtype": "Data",
+   "label": "Includes"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "label": "Price"
+  },
+  {
+   "fieldname": "warranty_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Owners Name",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer_name.primary_address",
+   "fieldname": "address",
+   "fieldtype": "Read Only",
+   "label": "Address",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "customer_name.mobile",
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "owner_details_section",
+   "fieldtype": "Section Break",
+   "label": "Owner Details"
+  },
+  {
+   "fieldname": "column_break_oz08",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "customer_name.customer_group",
+   "fieldname": "customer_group",
+   "fieldtype": "Read Only",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Group"
+  },
+  {
+   "fieldname": "service_contract_status",
+   "fieldtype": "Select",
+   "label": "Service Contract Status",
+   "options": "Active\nIn Active"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Service Contract Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Service Contract End Date"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nElectric Vehicle\nVan\nPick up\nPolice car\nTrailor\nFuel Vehicle"
+  },
+  {
+   "fieldname": "vehicle_color_tag",
+   "fieldtype": "Select",
+   "label": "Vehicle Color Tag",
+   "options": "\nWhite\nYellow\nBlue\nRed\nGreen\nBlack\nBrown\nAzure\nIvory\nTeal\nSilver\nPurple\nNavy blue\nPea green\nGray\nOrange\nMaroon\nCharcoal\nAquamarine\nCoral\nFuchsia\nWheat\nLime\nCrimson\nKhaki\nHot pink\nMagenta\nOlden\nPlum\nOlive\nCyan"
+  }
+ ],
+ "force_re_route_to_default_view": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-03 16:30:28.191418",
+ "modified_by": "Administrator",
+ "module": "Autoservice",
+ "name": "Vehicle Master",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Autoservice Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Autoservice User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Cashier",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service Advisor",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

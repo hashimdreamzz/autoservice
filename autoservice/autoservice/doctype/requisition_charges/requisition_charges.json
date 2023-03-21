@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2022-12-15 17:24:42.709298",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "labor_charge_section",
+  "table_836r",
+  "parts_amount_section",
+  "table_mfkx",
+  "miscellaneous_section",
+  "table_vapi",
+  "total_section",
+  "table_3awx",
+  "customer_charges_section",
+  "table_bk4t",
+  "insurance_section",
+  "table_1hb3",
+  "advance_section",
+  "customer_charges",
+  "column_break_krdx",
+  "insurance"
+ ],
+ "fields": [
+  {
+   "fieldname": "labor_charge_section",
+   "fieldtype": "Section Break",
+   "label": "Labor Charge"
+  },
+  {
+   "fieldname": "table_836r",
+   "fieldtype": "Table",
+   "options": "Labor Charge"
+  },
+  {
+   "fieldname": "parts_amount_section",
+   "fieldtype": "Section Break",
+   "label": "Parts Amount"
+  },
+  {
+   "fieldname": "table_mfkx",
+   "fieldtype": "Table",
+   "options": "Parts Amount"
+  },
+  {
+   "fieldname": "miscellaneous_section",
+   "fieldtype": "Section Break",
+   "label": "Miscellaneous"
+  },
+  {
+   "fieldname": "table_vapi",
+   "fieldtype": "Table",
+   "options": "Miscelleneous"
+  },
+  {
+   "fieldname": "total_section",
+   "fieldtype": "Section Break",
+   "label": "Total"
+  },
+  {
+   "fieldname": "table_3awx",
+   "fieldtype": "Table",
+   "options": "Total"
+  },
+  {
+   "fieldname": "customer_charges_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Charges"
+  },
+  {
+   "fieldname": "table_bk4t",
+   "fieldtype": "Table",
+   "options": "Customer Charges"
+  },
+  {
+   "fieldname": "insurance_section",
+   "fieldtype": "Section Break",
+   "label": "Insurance"
+  },
+  {
+   "fieldname": "table_1hb3",
+   "fieldtype": "Table",
+   "options": "Insurance Charges"
+  },
+  {
+   "fieldname": "advance_section",
+   "fieldtype": "Section Break",
+   "label": "Advance"
+  },
+  {
+   "fieldname": "customer_charges",
+   "fieldtype": "Data",
+   "label": "Customer Charges"
+  },
+  {
+   "fieldname": "column_break_krdx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "insurance",
+   "fieldtype": "Data",
+   "label": "Insurance"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-15 19:57:48.047772",
+ "modified_by": "Administrator",
+ "module": "Autoservice",
+ "name": "Requisition Charges",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}
